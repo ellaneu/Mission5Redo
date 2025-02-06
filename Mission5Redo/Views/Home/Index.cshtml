@@ -1,8 +1,42 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Ella's Hobby";
 }
 
+<style>
+    .image-container {
+        display: flex;
+        justify-content: center; /* Center images horizontally */
+        gap: 10px; /* Add spacing between images */
+    }
+
+    .image-container img {
+        width: 500px; /* Set the size for both images */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .text-container {
+        text-align: left; /* Align text to the left */
+        max-width: 800px; /* Optional: Set a max width for better readability */
+        margin: 0 auto; /* Centers the container while keeping text left-aligned */
+    }
+</style>
+
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    <!-- Heading that introduces my site -->
+    <h1 class="display-4">Ella's Hobby: Soccer</h1>
+
+    <!-- Two images that display my hobby and are formatted using style above -->
+    <div class="image-container">
+        <img src="soccerBall.jpg" alt="Image 1">
+        <img src="soccerPlayer.jpg" alt="Image 2">
+    </div>
+
+    <!-- A few paragraphs that talk about my hobby -->
+    <div class="text-container">
+        <p>Soccer has been a huge part of my life for as long as I can remember. I grew up playing the sport, spending countless hours on the field, whether it was at practice, during games, or just kicking the ball around in my backyard. From a young age, I loved the feeling of running across the grass, the thrill of scoring a goal, and the teamwork that came with playing alongside friends. Some of my earliest memories involve lacing up my cleats, pulling on my jersey, and stepping onto the field with excitement and determination.</p>
+        <p>As I got older, soccer became more than just a fun activity—it taught me discipline, hard work, and perseverance. I learned how to push myself during tough practices, stay focused under pressure, and support my teammates no matter what. Whether it was early morning conditioning sessions, late-night games under the lights, or weekend tournaments that took me to different cities, I embraced every challenge. The sport shaped my mindset, teaching me resilience and the importance of always giving my best effort.</p>
+        <p>Beyond the competition, soccer also brought me some of my closest friendships and best memories. The camarad
+    </div>
+
 </div>
