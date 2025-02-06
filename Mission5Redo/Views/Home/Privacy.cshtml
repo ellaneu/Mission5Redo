@@ -1,6 +1,21 @@
 ﻿@{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "Hourly Rate Calculator";
 }
+
 <h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<form>
+    <!--A box for the user to enter the number of hours they need from you -->
+    <label>Enter Hours Needed:</label>
+    <input id="hours">
+    <br>
+    <!-- Non-editable box that shows how much I charge per hour for teaching about my hobby -->
+    <label>Hourly Rate:</label>
+    <input type="text" id="rate" value="25" readonly>
+    <br>
+    <!--Button that allows the user to calculate the total -->
+    <input type="submit" id="btnSubmit" value="Calculate">
+</form>
+
+<!-- Output text that shows the total after the calculation -->
+<div id="output" style="margin-top: 10px; font-weight: bold;"></div>
